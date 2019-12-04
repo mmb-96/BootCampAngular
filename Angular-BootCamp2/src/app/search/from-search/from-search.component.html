@@ -1,0 +1,13 @@
+<ul>
+    <li *ngFor="let owner of owners; let i = index">
+        <span [innerHTML]='owner.firstName'></span>
+        &nbsp;
+        <span [innerHTML]='owner.lastName'></span>
+        &nbsp;-&nbsp;
+        <span [innerHTML]='owner.city'></span>
+        &nbsp;-&nbsp;
+        <span *ngFor="let pet of owner.pets">
+            <span [innerHTML]='pet.name'></span>&nbsp;-&nbsp;
+        </span>
+    </li>
+</ul>
