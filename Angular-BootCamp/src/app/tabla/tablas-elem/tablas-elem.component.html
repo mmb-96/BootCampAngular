@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <th>Calle</th>
+        <th>Numero</th>
+        <th>Codigo Postal</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td [innerHTML]="direccion.calle"></td>
+            <td *ngIf="direccion.numero" [innerHTML]="direccion.numero"></td>
+            <td *ngIf="!direccion.numero">S/N</td>
+            <td [innerHTML]="direccion.cp"></td>
+        </tr>
+    </tbody>
+</table>

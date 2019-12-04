@@ -1,0 +1,9 @@
+<!-- <p>Hola mundo <span [innerHTML]="title"></span></p>
+
+<p *ngIf="showP">Aparezco</p>
+
+<p *ngFor="let item of list; index as i" [innerHTML]='item'></p> -->
+<span [innerHTML]="showFullName"></span>
+<app-search name="Manuel" surname="Melero" (fullname)="receiveFullNane($event)"></app-search>
+<app-tabla></app-tabla>
+<router-outlet></router-outlet>
